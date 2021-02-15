@@ -1,10 +1,67 @@
 <!DOCTYPE html>
- <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>test</title>
- </head>
- 
- <body>
-  test
- </body>
+<html lang="ja">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>かあびぃのホームページ建設予定地</title>
+
+       <!-- bootstrap -->
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+       
+
+       <!-- styles -->
+       <link rel="stylesheet" href="css/index.css"> 
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Google MaterialIcons-->
+
+       <!-- fonts-->
+       <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+
+       <!-- jQuery-->
+       <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+       <script>
+           $(function(){
+           $('.menu').click(function(){
+               if($('.menu-bar').hasClass('off')){
+                    $('.menu-bar').removeClass('off');
+                    $('.menu-bar').animate({'right':'-20vw'},1000);
+                    $('.menu').animate({'right':'0vw'},1000);
+
+               }else{
+                $('.menu-bar').addClass('off');
+                    $('.menu-bar').animate({'right':'5vw'},1000);
+                    $('.menu').animate({'right':'25vw'},1000);
+
+               }
+
+           });
+
+        });
+       </script>
+</head>
+
+
+<body>
+    <span class="material-icons menu">
+        menu
+    </span>
+
+    <div class="menu-bar">
+        <div class="menu-head">
+        Menu
+        </div>
+
+        <div class="menu-bottom">
+            
+        </div>
+    </div>
+       <div class="title">
+              <div class="title-text">
+              かあびぃのお部屋建設予定地
+              </div>
+        </div>
+</body>
+</html>
