@@ -1,0 +1,25 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+}
+
+header{
+    padding:20px;
+    color:#FFFFFF;
+    text-align:center;
+    background-image: url("../images/background2.jpg");
+    background-size: cover;
+}
+
+div.top{
+    margin-top:50px;
+    margin-bottom:50px;
+    padding-top:20px;
+    padding-bottom:20px;
+    font-size:150%;
+    font-weight:bold;
+    background: rgba(255,255,255,0.5);
+    border:solid 4px #ffffff;
+}
